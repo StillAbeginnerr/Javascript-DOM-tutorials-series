@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tip Calculator</h1>
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Bill</h3>
+        <input id="num1" type="text" style="border-radius: 9px;" />
+        <hr style="opacity: 0;">
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Tip %</h3>
+        <input id="num2" type="text " style=" border-radius: 9px;" />
+        <input id="num3" type="text" placeholder="no. of people" style=" border-radius: 9px;" />
+
+        <hr style="opacity: 0;">
+        <h2>total</h2>
+        <input type="text" id="sum" readonly="readonly" style="border-radius: 9px;" />
+        <input type="button" value="Calc" onclick="calc()" />
+        <script>
+            function calc() {
+                let num1 = Number(document.querySelector("#num1").value);
+                let num2 = Number(document.querySelector("#num2").value);
+                let num3 = Number(document.querySelector("#num3").value)
+                let sum = num1 * (num2 / 100);
+                document.getElementById("sum").value = sum / num3;
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
