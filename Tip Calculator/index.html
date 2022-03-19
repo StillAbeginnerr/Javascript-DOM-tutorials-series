@@ -15,14 +15,17 @@
         <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Tip %</h3>
         <input id="num2" type="text " style=" border-radius: 9px;" />
         <input id="num3" type="text" placeholder="no. of people" style=" border-radius: 9px;" />
+        <!--Border radius make the input box borders in curve shape depending upon the value given-->
 
 
         <hr style="opacity: 0;">
+        <!-- reduce the visibility to zero -->
         <h2>total</h2>
         <input type="text" id="sum" readonly="readonly" style="border-radius: 9px;" />
         <!-- gives the output on the basis of input given by user-->
         <input type="button" value="Calc" onclick="calc()" />
         <script>
+            // function to get called by input tag when user click calc button 
             function calc() {
                 let num1 = Number(document.querySelector("#num1").value); // reads the value of the input type text
                 let num2 = Number(document.querySelector("#num2").value);
