@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!-- In Development-->
+
+<head>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Geo Location Api Usage</h1>
+    </center>
+    <div>
+        <!--Simple HTML Tags to show Longitude and latitude , id's are used to manipulate the text written in h3 headings-->
+        <h3>Latitude</h3>
+        <h3 id="lat">0.00</h3>
+        <h3>Longitude</h3>
+        <h3 id="long">0.00</h3>
+    </div>
+    <!-- button is used to call javascript function received which contains the logic to get latitude and longitude-->
+    <button onclick="received()">Get the Location of yours</button>
+
+    <!--Script must be called in last to avoid unknown errors-->
+    <script src="Geo.js"></script>
+</body>
+
+</html>
