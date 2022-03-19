@@ -14,18 +14,20 @@
         <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Tip %</h3>
         <input id="num2" type="text " style=" border-radius: 9px;" />
         <input id="num3" type="text" placeholder="no. of people" style=" border-radius: 9px;" />
+        <!-- Read the input given by user-->
 
         <hr style="opacity: 0;">
         <h2>total</h2>
         <input type="text" id="sum" readonly="readonly" style="border-radius: 9px;" />
+        <!-- gives the output on the basis of input given by user-->
         <input type="button" value="Calc" onclick="calc()" />
         <script>
             function calc() {
-                let num1 = Number(document.querySelector("#num1").value);
+                let num1 = Number(document.querySelector("#num1").value); // reads the value of the input type text
                 let num2 = Number(document.querySelector("#num2").value);
                 let num3 = Number(document.querySelector("#num3").value)
                 let sum = num1 * (num2 / 100);
-                document.getElementById("sum").value = sum / num3;
+                document.getElementById("sum").value = sum / num3; // changes the value of type text in input tag
             }
         </script>
 
