@@ -8,3 +8,4 @@
 <h4> Clock function Simple Working to show date and time </h4>
 <hr>
 <h4> Basic function of fetch Api 
+  <hr>
